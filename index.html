@@ -1,106 +1,55 @@
 <!DOCTYPE html>
-<html>
-<title></title>
+<html lang="en">
+<head><script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="apacdemosite-test" data-cb-ga-enabled="true" ></script>
+<title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<head><script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="jaytestsite-test" ></script></head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #e7e7e7;
+  color: black;
+}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+</style>
+</head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>Future Gym</b> </a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
+<div class="header">
+  <h1>Test Website</h1>
+  <p><button class="btn success"a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="monthly-pet-care" data-cb-addons_id_0="expedited-shipping">Buy Now</button>
+
+</p>
 </div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>AU</b></span> <span class="w3-hide-small w3-text-light-grey">Future Gym</span></h1>
-  </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Store</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlxCd3FQFz5DUU05Krp-eAVkqm1HqJ_qbEODga4G-aLTVA_aIU" height="219" width="310" alt="Suit" style="width:100%">
-        <div align="center"><button type="button" a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="singlesuit" style="margin:10px">Buy</button></div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="https://bbvaopen4u.com/sites/default/files/styles/big-image/public/img/new/5herramientas_0.png?itok=MIyo_JJk" alt="App Subscription" height="219" width="310" style="width:100%">
-        <div align="center"><button type="button" a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="basic-monthly-fitness-plan" style="margin:10px">subscribe</button></div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="https://c8.alamy.com/comp/P7Y4F4/asian-woman-using-smart-phone-when-workout-or-strength-training-at-fitness-gym-on-treadmill-relax-and-technology-concept-sports-exercise-and-health-P7Y4F4.jpg" alt="Combo" style="width:100%" height="219" width="310">
-        <div align="center"><button type="button" a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="suitnappcombo" style="margin:10px">subscribe</button></div>
-      </div>
-    </div>
-    
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="http://ichef.bbci.co.uk/news/976/cpsprodpb/169BE/production/_99560629_superheroesgetty.jpg" alt="Box" style="width:99%" height="219" width="310">
-        <div align="center"><button type="button" a href="javascript:void(0)" data-cb-type="checkout" data-cb-plan-id="copy_of_singlesuit" style="margin:10px">Buy</button></div>
-      </div>
-    </div>
-  </div>
- <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Please select a shipping speed. Normal & Fast shipping are extra</p>
-    <form action="" target="_blank">
-<select name="shipping option">
-  <option value="free">Free (10-15 days)</option>
-  <option value="normal">Normal (7-10 days)</option>
-  <option value="Fast">Fast Shipping (3-5 days)</option>
-</select>
-       </form>
-  </div>
-  <!-- Contact Section 
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit" href = "javascript:void(0)"  data-cb-type = "checkout"  data-cb-plan-id = "suitnappcombo" > subscribe </button>
-
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>-->
-  
-<!-- Image of location/map -->
-
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer 
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>-->
 
 </body>
 </html>
